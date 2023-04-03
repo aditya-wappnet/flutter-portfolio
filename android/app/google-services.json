@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "817182076719",
+    "project_id": "aditya-portfolio-9ecba",
+    "storage_bucket": "aditya-portfolio-9ecba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817182076719:android:f3d5555126220d8ef03bda",
+        "android_client_info": {
+          "package_name": "com.example.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817182076719-tg6052p018vt69ogmll30qepub4fith1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.portfolio",
+            "certificate_hash": "4e9bf0fb6b9879fe1b75945854ec972e14727a38"
+          }
+        },
+        {
+          "client_id": "817182076719-l76grps116sbhvqdr7fk1lpgb7hilj1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUhK8ikXbywpXNmmicAwGa4o1YJFaGc0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817182076719-l76grps116sbhvqdr7fk1lpgb7hilj1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

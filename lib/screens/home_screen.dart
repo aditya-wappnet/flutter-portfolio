@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
@@ -23,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               width: 10,
             ),
             Text(
-              "Untitled UI",
+              "ADITYA'S PORTFOLIO",
               style: TextStyle(color: Colors.black),
             )
           ],
@@ -185,7 +187,7 @@ class HomeScreen extends StatelessWidget {
                                             height: 10,
                                           ),
                                           Text(
-                                            "Website",
+                                            "LinkedIn",
                                             style: kSubTitleText,
                                           ),
                                           const SizedBox(
@@ -207,41 +209,19 @@ class HomeScreen extends StatelessWidget {
                                             height: 10,
                                           ),
                                           Text(
-                                            "Portfolio",
+                                            "Whatsapp",
                                             style: kSubTitleText,
                                           ),
                                           const SizedBox(
                                             height: 10,
                                           ),
                                           Row(
-                                            children: [
-                                              Text(portfolio),
-                                              const SizedBox(
+                                            children: const [
+                                              Text('wa.me/9766349579'),
+                                              SizedBox(
                                                 width: 5,
                                               ),
-                                              const Icon(
-                                                Icons.launch,
-                                                size: 16,
-                                              )
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Text(
-                                            "Email",
-                                            style: kSubTitleText,
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Row(
-                                            children: [
-                                              Text(email),
-                                              const SizedBox(
-                                                width: 5,
-                                              ),
-                                              const Icon(
+                                              Icon(
                                                 Icons.launch,
                                                 size: 16,
                                               )
@@ -337,37 +317,13 @@ class HomeScreen extends StatelessWidget {
                                           height: 10,
                                         ),
                                         Text(
-                                          "Portfolio",
+                                          "Whatsapp",
                                           style: kSubTitleText,
                                         ),
-                                        const SizedBox(
-                                          height: 10,
-                                        ),
                                         Row(
+                                          // ignore: prefer_const_literals_to_create_immutables
                                           children: [
-                                            Text(portfolio),
-                                            const SizedBox(
-                                              width: 5,
-                                            ),
-                                            const Icon(
-                                              Icons.launch,
-                                              size: 16,
-                                            )
-                                          ],
-                                        ),
-                                        const SizedBox(
-                                          height: 10,
-                                        ),
-                                        Text(
-                                          "Email",
-                                          style: kSubTitleText,
-                                        ),
-                                        const SizedBox(
-                                          height: 10,
-                                        ),
-                                        Row(
-                                          children: [
-                                            Text(email),
+                                            Text('wa.me/9766349579'),
                                             const SizedBox(
                                               width: 5,
                                             ),
@@ -391,11 +347,12 @@ class HomeScreen extends StatelessWidget {
             ),
             Center(
               child: SizedBox(
-                  width: context.screenConstraint().width * 0.8,
+                  width: context.screenConstraint().width * 0.9,
                   child: GridView.builder(
                       shrinkWrap: true,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
+                          crossAxisCount:
+                              context.screenConstraint().width > 1000 ? 2 : 1,
                           childAspectRatio:
                               context.screenConstraint().width > 1000 ? 3 : 2),
                       itemCount: projectList.length,

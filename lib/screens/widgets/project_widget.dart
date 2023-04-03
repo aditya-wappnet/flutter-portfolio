@@ -12,7 +12,7 @@ class ProjectWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: context.screenConstraint().width * 0.4,
+      width: context.screenConstraint().width * 0.7,
       child: Card(
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Padding(
@@ -29,7 +29,12 @@ class ProjectWidget extends StatelessWidget {
                 ),
                 Text(
                   projectData.name,
-                  style: kSectionTitleText,
+                  style: TextStyle(
+                    color: kPrimaryColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize:
+                        context.screenConstraint().width > 1000 ? 18.0 : 12.0,
+                  ),
                 ),
               ],
             ),
@@ -38,6 +43,7 @@ class ProjectWidget extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Text(
               projectData.description,
+              style: const TextStyle(fontSize: 10),
             ),
           ),
           const Spacer(),
